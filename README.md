@@ -1,85 +1,89 @@
-<p align="center">
-  <img src="./assets/leetcode-header.svg" width="100%" alt="LeetCode Solutions - a pattern-first algorithm archive">
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://leetcode.com/">
-    <img src="https://img.shields.io/badge/LeetCode-Solutions-00B8A9?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode Solutions">
-  </a>
-  <img src="https://img.shields.io/badge/C%2B%2B-17%20%7C%2020-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++ 17 and 20">
-  <img src="https://img.shields.io/badge/Organization-Pattern_First-22C55E?style=for-the-badge" alt="Pattern-first organization">
-  <img src="https://img.shields.io/badge/Purpose-Reference_Archive-7C3AED?style=for-the-badge" alt="Reference archive">
-</p>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=230&section=header&text=LeetCode%20Solutions&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Pattern-first%20algorithm%20archive&descAlignY=57&descSize=16" alt="LeetCode Solutions">
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1100&color=25D9C8&center=true&vCenter=true&width=820&lines=Pattern+recognition+over+memorized+answers;Readable+C%2B%2B+%7C+Explicit+trade-offs+%7C+Reusable+ideas;From+accepted+solution+to+durable+understanding" alt="Repository principles">
-</p>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1100&color=16C7C1&center=true&vCenter=true&width=820&lines=Reading+constraints+before+writing+code;Turning+patterns+into+reusable+instincts;Clean+C%2B%2B+%7C+Clear+reasoning+%7C+Explicit+trade-offs" alt="Repository philosophy">
 
-<p align="center">
-  An intentionally organized collection of LeetCode solutions, implementation notes,<br>
-  and reusable problem-solving patterns.
-</p>
+<br>
+
+![C++](https://img.shields.io/badge/C%2B%2B-17%20%7C%2020-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
+![Structure](https://img.shields.io/badge/Structure-Pattern_First-00B8A9?style=for-the-badge)
+![Purpose](https://img.shields.io/badge/Purpose-Learning_Archive-7C3AED?style=for-the-badge)
+
+<br><br>
+
+A curated collection of LeetCode solutions built for **understanding**, **revision**, and **reuse**.
+
+[Explore](#explore-the-archive) &nbsp;|&nbsp; [Approach](#the-problem-solving-loop) &nbsp;|&nbsp; [Architecture](#repository-architecture) &nbsp;|&nbsp; [Solution Standard](#solution-standard)
+
+</div>
 
 ---
 
-## About This Archive
+## Repository Intent
 
-This repository is a long-term reference for the ideas behind solved LeetCode problems: the pattern that unlocks them, the invariant that keeps them correct, and the trade-offs that shape the final implementation.
+This repository preserves more than accepted code. Each solution is treated as a compact record of:
 
-It serves four roles:
+| Pattern | Reasoning | Implementation |
+| :---: | :---: | :---: |
+| The idea that unlocks the problem | The invariant that makes it correct | The trade-offs that shape the final code |
 
-| Role | What it preserves |
+It is simultaneously a **learning archive**, a **pattern library**, an **implementation reference**, and a quiet record of how my algorithmic thinking evolves.
+
+> An accepted submission is a checkpoint. The durable artifact is the idea that can be recognized and rebuilt later.
+
+---
+
+## Explore the Archive
+
+The archive is organized by the pattern responsible for a problem's key breakthrough.
+
+| Foundations | Data Structures | Search & Optimization |
+| :--- | :--- | :--- |
+| [Arrays & Hashing](./solutions/arrays-hashing/) | [Linked Lists](./solutions/linked-lists/) | [Backtracking](./solutions/backtracking/) |
+| [Two Pointers](./solutions/two-pointers/) | [Trees & BST](./solutions/trees-bst/) | [Dynamic Programming](./solutions/dynamic-programming/) |
+| [Sliding Window](./solutions/sliding-window/) | [Heaps](./solutions/heaps/) | [Greedy & Intervals](./solutions/greedy-intervals/) |
+| [Stack & Queue](./solutions/stack-queue/) | [Graphs](./solutions/graphs/) | [Bit Manipulation & Math](./solutions/bit-math/) |
+| [Binary Search](./solutions/binary-search/) |  |  |
+
+Every topic opens with a short recognition guide: when the pattern applies, what signals reveal it, and which tools usually express it best.
+
+---
+
+## The Problem-Solving Loop
+
+```mermaid
+flowchart LR
+    A["Read constraints"] --> B["Recognize the pattern"]
+    B --> C["Define the invariant"]
+    C --> D["Implement clearly"]
+    D --> E["Review trade-offs"]
+    E -. "refine" .-> B
+
+    style A fill:#082f49,stroke:#00C9FF,color:#ffffff
+    style B fill:#083344,stroke:#22d3ee,color:#ffffff
+    style C fill:#064e3b,stroke:#5eead4,color:#ffffff
+    style D fill:#14532d,stroke:#86efac,color:#ffffff
+    style E fill:#365314,stroke:#92FE9D,color:#ffffff
+```
+
+| Stage | Question worth answering |
 | :--- | :--- |
-| **Learning archive** | New techniques and the reasoning used to discover them |
-| **Pattern library** | Reusable approaches across related problems |
-| **Implementation reference** | Clean C++ solutions with explicit complexity |
-| **Growth journal** | Better approaches discovered after the first accepted submission |
-
-> The goal is not to collect accepted submissions. It is to preserve the reasoning worth reusing.
-
----
-
-## Navigate by Pattern
-
-Solutions are grouped by their **primary problem-solving pattern**, making the archive useful for focused practice and fast revision.
-
-| Pattern | Core ideas |
-| :--- | :--- |
-| [Arrays & Hashing](./solutions/arrays-hashing/) | Frequency maps, prefix data, lookup-driven reductions |
-| [Two Pointers](./solutions/two-pointers/) | Converging boundaries, partitioning, in-place scans |
-| [Sliding Window](./solutions/sliding-window/) | Incremental state, valid ranges, substring constraints |
-| [Stack & Queue](./solutions/stack-queue/) | Monotonic structures, deferred work, ordered processing |
-| [Binary Search](./solutions/binary-search/) | Search spaces, monotonic predicates, boundary control |
-| [Linked Lists](./solutions/linked-lists/) | Pointer movement, reversal, cycle reasoning |
-| [Trees & BST](./solutions/trees-bst/) | Recursive structure, traversal, ordered trees |
-| [Heaps](./solutions/heaps/) | Priority-driven selection, streaming extrema, scheduling |
-| [Backtracking](./solutions/backtracking/) | State-space exploration, pruning, reversible choices |
-| [Graphs](./solutions/graphs/) | Traversal, connectivity, shortest paths, topological order |
-| [Dynamic Programming](./solutions/dynamic-programming/) | State design, transitions, memoization, tabulation |
-| [Greedy & Intervals](./solutions/greedy-intervals/) | Local choices, ordering, overlap reasoning |
-| [Bit Manipulation & Math](./solutions/bit-math/) | Bitwise state, number properties, combinatorial reasoning |
+| **Constraints** | What do the input limits make possible or impossible? |
+| **Pattern** | Which familiar structure does the problem reduce to? |
+| **Invariant** | What must remain true while the algorithm runs? |
+| **Implementation** | Which data structure expresses the idea most clearly? |
+| **Review** | Can complexity or clarity improve without hiding the insight? |
 
 ---
 
-## Organization Strategy
-
-This repository uses a **topic-first hybrid structure**:
-
-- A solution lives under the pattern that best explains its key insight.
-- Difficulty and secondary patterns live in the solution metadata.
-- Filenames begin with the LeetCode problem ID for predictable ordering.
-- Each problem has one canonical implementation, avoiding duplicated files.
+## Repository Architecture
 
 ```text
 LeetCode-Solutions/
-├── assets/
-│   ├── leetcode-header.svg
-│   └── leetcode-footer.svg
 ├── solutions/
-│   ├── README.md
 │   ├── arrays-hashing/
-│   │   ├── README.md
-│   │   └── 0001-two-sum.cpp
 │   ├── two-pointers/
 │   ├── sliding-window/
 │   ├── stack-queue/
@@ -97,28 +101,22 @@ LeetCode-Solutions/
 └── README.md
 ```
 
-Why not organize only by difficulty? Difficulty is useful context, but it is not a learning path. Topic-first navigation makes related ideas easy to compare, while metadata still preserves the Easy, Medium, or Hard classification.
+### Why topic-first?
 
-Each topic folder includes a short, evergreen pattern note. These landing pages make navigation useful from day one without requiring manual status boards.
+Difficulty tells you how demanding a problem may be. **Pattern tells you what the problem can teach.**
 
----
+- Related ideas remain close enough to compare.
+- Revision can target a weak technique directly.
+- Each solution has one canonical location.
+- Difficulty and secondary patterns remain visible inside the file metadata.
 
-## The Pattern Recognition Loop
-
-| Stage | Guiding question | Result |
-| :--- | :--- | :--- |
-| **Recognize** | What property or constraint is doing the real work? | Candidate patterns |
-| **Reduce** | What smaller state, invariant, or search space represents the problem? | A precise model |
-| **Implement** | Which data structure expresses that model clearly? | A readable solution |
-| **Refine** | Can time, space, or clarity improve without hiding the idea? | A durable reference |
-
-This loop matters more than memorizing a finished answer. The useful part of a solution is the decision process that can transfer to the next problem.
+When a problem fits several topics, it lives under the pattern responsible for the main insight. Supporting techniques are recorded alongside it.
 
 ---
 
 ## Solution Standard
 
-Every solution should be understandable without reopening the entire problem discussion. A short metadata header records the information most useful during revision:
+Every solution should remain useful after the original problem is no longer fresh.
 
 ```cpp
 /*
@@ -131,32 +129,26 @@ Every solution should be understandable without reopening the entire problem dis
  * Space: O(n)
  *
  * Insight:
- * Store each visited value so its required complement can be found immediately.
+ * Store visited values so each required complement can be found immediately.
  */
 ```
 
-Implementations favor clear invariants, meaningful names, and standard C++ over cleverness that makes the core idea harder to recover later.
-
----
-
-## Repository Principles
-
-| Principle | In practice |
+| Principle | What it means here |
 | :--- | :--- |
-| **Optimize for recall** | Capture the insight and invariant, not a transcript of every thought |
-| **Prefer one canonical solution** | Keep the clearest strong approach; document meaningful alternatives |
-| **Explain decisions, not syntax** | Comments clarify why an approach works or why a trade-off was chosen |
-| **Refine after acceptance** | Accepted is the first checkpoint; readability and understanding still matter |
+| **One canonical solution** | Keep the clearest strong approach; document alternatives only when they teach something different |
+| **Reasoning over narration** | Comments explain decisions and invariants, not obvious syntax |
+| **Explicit complexity** | Time and space costs are part of the solution, not an afterthought |
+| **Readable modern C++** | Prefer clear standard-library tools and meaningful names over clever compression |
 
 ---
 
-## Using This Repository
+## Three Ways to Use This Repository
 
-1. Choose a pattern you want to strengthen.
-2. Attempt a problem before opening its solution.
-3. Compare the key invariant and complexity, not just the final code.
-4. Reimplement the idea later from memory.
-5. Revisit neighboring problems to recognize what changes and what stays reusable.
+| Learn | Reconstruct | Compare |
+| :--- | :--- | :--- |
+| Choose a pattern and study its recognition signals | Rebuild a solved approach from only its insight and invariant | Open neighboring problems and identify what changes while the pattern stays the same |
+
+The repository is most valuable when used as a map back to an idea, not as a shortcut around the problem.
 
 ---
 
@@ -166,7 +158,7 @@ Implementations favor clear invariants, meaningful names, and standard C++ over 
   <img src="https://skillicons.dev/icons?i=cpp,git,github,vscode" alt="C++, Git, GitHub, and VS Code">
 </p>
 
-The solutions are written primarily in modern **C++**, with an emphasis on the standard library, algorithmic clarity, and interview-ready reasoning.
+Solutions are written primarily in modern **C++**, with an emphasis on standard-library fluency, explicit complexity, and interview-ready reasoning.
 
 ---
 
@@ -176,6 +168,10 @@ The solutions are written primarily in modern **C++**, with an emphasis on the s
 - Solutions are personal implementations created for learning and reference.
 - Complexity notes describe the submitted approach unless stated otherwise.
 
-<p align="center">
-  <img src="./assets/leetcode-footer.svg" width="100%" alt="A reference archive for deliberate problem solving">
-</p>
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&color=16C7C1&center=true&vCenter=true&width=780&lines=Constraints+reveal+the+search+space.;Invariants+make+implementations+trustworthy.;Good+solutions+survive+being+revisited." alt="Closing principles">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=130&section=footer&animation=fadeIn" alt="Footer wave">
+
+</div>
