@@ -1,4 +1,3 @@
-
 <div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=230&section=header&text=LeetCode%20Solutions&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Pattern-first%20algorithm%20archive&descAlignY=57&descSize=16" alt="LeetCode Solutions">
@@ -56,19 +55,19 @@ For example, `0003-longest-substring-without-repeating-characters.cpp` exists on
 
 ```text
 LeetCode-Solutions/
-├── solutions/
-│   ├── 0001-0500/
-│   │   └── 0003-longest-substring-without-repeating-characters.cpp
-│   ├── 0501-1000/
-│   ├── 1001-1500/
-│   ├── 1501-2000/
-│   └── ...
-├── indexes/
-│   ├── topics.md
-│   └── difficulty.md
-├── templates/
-│   └── solution.cpp
-└── README.md
++-- solutions/
+|   +-- 0001-0500/
+|   |   +-- 0003-longest-substring-without-repeating-characters.cpp
+|   +-- 0501-1000/
+|   +-- 1001-1500/
+|   +-- 1501-2000/
+|   +-- ...
++-- indexes/
+|   +-- topics.md
+|   +-- difficulty.md
++-- templates/
+|   +-- solution.cpp
++-- README.md
 ```
 
 ### Why this structure?
@@ -169,10 +168,22 @@ Solutions are written primarily in modern **C++**, with an emphasis on standard-
 - Solutions are personal implementations created for learning and reference.
 - Indexes are navigation layers, not progress trackers.
 
+---
+
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&color=16C7C1&center=true&vCenter=true&width=780&lines=One+implementation.+Every+relevant+perspective.;Patterns+over+folders.;Good+solutions+survive+being+revisited." alt="Closing principles">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=800&color=92FE9D&center=true&vCenter=true&width=650&lines=Accepted+is+not+luck.;Every+wrong+answer+teaches+something.;Consistency+beats+random+motivation.;One+problem+closer+to+mastery." alt="Practice mindset">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=130&section=footer&animation=fadeIn" alt="Footer wave">
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00C9FF&center=true&vCenter=true&width=700&lines=Practice.+Fail.+Debug.+Learn.+Repeat.;Building+logic+one+submission+at+a+time.;See+you+at+the+next+Accepted." alt="Closing principles">
+
+<br><br>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,50:92FE9D,100:FFFFFF&height=120&section=footer&animation=fadeIn" alt="Footer wave">
 
 </div>
